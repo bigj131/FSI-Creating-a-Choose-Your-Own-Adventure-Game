@@ -9,7 +9,11 @@ if(thirdAnswer === 'stay') {window.alert('You live happily amongst the cats for 
 } else if(thirdAnswer === 'spread the word'){window.alert('After leaving the cat colony, you are never able to find it again; without proof, no one believes your story, which passes into legend nonetheless.')}
 } else if(secondAnswer === 'continue'){
     let thirdAnswer = window.prompt('You come across a chamber that reaches upward to a shining light above. There is a long, winding staircase, and a much quicker, but rickety-looking ladder that leads up toward the light. Do you take the ladder or the staircase')
-    if(thirdAnswer === 'ladder'){window.alert('After ascending a few feet up the ladder, one of its rungs snaps, and you comedically fall through each of the rungs below. Sheepish, you return home.')}
+    if(thirdAnswer === 'ladder'){
+        let fourthAnswer = window.prompt('You ascend the ladder as it shakes under your weight frequently. The ladder breaks and you fall to your death. You wake up in your bed realizing it was a dream. Do you go to the bathroom or grab a glass of milk?')
+        if(fourthAnswer === 'bathroom'){let fifthAnswer = window.prompt('As your using the bathroom, you hear a noise and look outside the window and you witness a mysterious figure staring at you. Do you look away or keep staring?')}
+        if (fifthAnswer === 'look away'){let sixthAnswer = window.prompt('You look away and when you look back out of the window it is no longer there. You then hear a noise in the kitchen. Do you run back to your room or to the kitchen?') if (sixthAnswer === 'kitchen'){window.alert('You run into the kitchen and the strange figure stabs you between the eyes. You never wake again.')}}
+    }
     else if(thirdAnswer === 'staircase'){window.alert('After ascending the staircase, you discover a shiny blue stone, which you take home and cherish forever.')}
 }
 } else if(firstAnswer === 'right') {
